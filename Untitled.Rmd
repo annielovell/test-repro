@@ -15,3 +15,8 @@ ggplot(data = mpg, aes(x = class, y = cty)) +
 geom_jitter()
 ```
 
+Made my graph nicer
+```{r}
+ggplot(data = mpg, aes(x = class, y = cty)) +
+		geom_jitter(aes(color = class), alpha = 0.5)
+```
